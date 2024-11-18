@@ -1,0 +1,6 @@
+<button [ngClass]="type" class="btn">
+  <ng-container *ngIf="icon">
+    <svg [icon]="icon" width="32" height="32" class="btn-icon" ></svg>
+  </ng-container>
+  <ng-container *ngIf="label">{{ label }}</ng-container>
+</button>
