@@ -1,0 +1,6 @@
+<div class="input-container">
+  <input type="text" [placeholder]="placeholder" class="custom-input">
+  <ng-container *ngIf="icon">
+    <svg [icon]="icon" width="16" height="20" class="input-icon"></svg>
+  </ng-container>
+</div>

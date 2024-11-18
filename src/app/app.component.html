@@ -1,30 +1,9 @@
 <div class="container">
   <header class="header">
-    <div class="header-wrapper">
-      <svg icon="logo" width="174" height="24"></svg>
-      <div class="header-right">
-        <div class="search-container">
-          <input type="text" placeholder="Поиск" class="search-input">
-          <svg icon="search" width="16" height="20" class="search-icon"></svg>
-        </div>
-        <app-avatar-circle [avatarUrl]="'assets/avatar.png'"></app-avatar-circle>
-        <span>Максим Галактионов</span>
-        <app-button type="icon" icon="settings"></app-button>
-      </div>
-    </div>
+    <app-header></app-header>
   </header>
   <nav class="nav">
-    <div class="nav-wrapper">
-      <div class="nav-item">
-        <div class="nav-item__icon">
-          <app-button type="icon-no-border" icon="nav"></app-button>
-        </div>
-        <div class="nav-item__icon">
-          <app-button type="icon-no-border" icon="settings"></app-button>
-        </div>
-      </div>
-      <div class="nav-search"></div>
-    </div>
+    <app-nav></app-nav>
   </nav>
   <main class="main">body</main>
 </div>

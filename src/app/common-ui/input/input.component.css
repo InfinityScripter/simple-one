@@ -1,0 +1,31 @@
+.input-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-input {
+  width: 100%;
+  border: 1px solid #d5d8dd;
+  border-radius: 4px;
+  /* Отступ для иконки */
+  padding: 6px 32px 6px 8px;
+  height: 34px;
+  font-size: 14px;
+}
+
+.custom-input::placeholder {
+  font-family: var(--font-family), serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #abb1ba;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

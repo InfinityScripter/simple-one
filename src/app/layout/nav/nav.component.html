@@ -1,0 +1,26 @@
+<div class="nav-wrapper">
+  <div class="nav-item">
+    <div class="nav-item__icon">
+      <app-button type="icon-no-border" icon="nav"></app-button>
+    </div>
+    <div class="nav-item__icon">
+      <app-button type="icon-no-border" icon="settings"></app-button>
+    </div>
+  </div>
+  <div class="nav-search-wrapper">
+    <div class="nav-search">
+      <div class="nav-search__element">
+        <app-input placeholder="Поиск по меню" icon="filter"></app-input>
+        <app-button type="icon" icon="pin"></app-button>
+      </div>
+    </div>
+    <div class="nav-list">
+
+      <ul class="nav-list__elements">
+        <li *ngFor="let item of navItems">
+          {{ item }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
