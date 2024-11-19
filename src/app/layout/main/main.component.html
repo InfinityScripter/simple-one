@@ -2,7 +2,9 @@
   <div class="subheading">
     <div class="subheading__left">
       <span class="subheading__title">Подзадача</span>
-      <app-button type="secondary" label="Создать"></app-button>
+      <app-button type="secondary" label="Создать" (click)="toggleModal()"></app-button>
+
+      <app-modal *ngIf="openModal" (closeModal)="toggleModal()"></app-modal>
     </div>
     <div class="subheading__right">
       <app-button type="primary" label="Сохранить"></app-button>
