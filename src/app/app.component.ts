@@ -9,11 +9,12 @@ import {HeaderComponent} from './layout/header/header.component';
 import {NavComponent} from './layout/nav/nav.component';
 import {LabelComponent} from './common-ui/label/label.component';
 import {TagInputComponent} from './common-ui/tag-input/tag-input.component';
+import {MainComponent} from './layout/main/main.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SvgComponent, AvatarCircleComponent, ButtonComponent, InputComponent, NgForOf, HeaderComponent, NavComponent, LabelComponent, TagInputComponent],
+  imports: [RouterOutlet, SvgComponent, AvatarCircleComponent, ButtonComponent, InputComponent, NgForOf, HeaderComponent, NavComponent, LabelComponent, TagInputComponent, MainComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
