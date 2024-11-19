@@ -62,3 +62,9 @@
   grid-template-columns: 1fr auto;
   gap: 4px;
 }
+
+.input-group-two-elements {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 4px;
+}

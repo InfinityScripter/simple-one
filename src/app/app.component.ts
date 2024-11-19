@@ -8,11 +8,12 @@ import {NgForOf} from '@angular/common';
 import {HeaderComponent} from './layout/header/header.component';
 import {NavComponent} from './layout/nav/nav.component';
 import {LabelComponent} from './common-ui/label/label.component';
+import {TagInputComponent} from './common-ui/tag-input/tag-input.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SvgComponent, AvatarCircleComponent, ButtonComponent, InputComponent, NgForOf, HeaderComponent, NavComponent, LabelComponent],
+  imports: [RouterOutlet, SvgComponent, AvatarCircleComponent, ButtonComponent, InputComponent, NgForOf, HeaderComponent, NavComponent, LabelComponent, TagInputComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -57,6 +57,26 @@
             </div>
 
           </div>
+
+          <div class="two-columns">
+            <div>
+              <app-label forId="handler">Ответственный</app-label>
+              <div class="input-group-two-elements">
+                <app-tag-input inputId="handler" [tags]="['Константин Константинов']"
+                               [removable]="true"></app-tag-input>
+                <app-button type="icon" icon="plus"></app-button>
+                <app-button type="icon" icon="search-btn"></app-button>
+              </div>
+            </div>
+            <div>
+              <app-label forId="group">Группа</app-label>
+              <div class="input-group-two-elements">
+                <app-tag-input inputId="group" [tags]="['Support Group']" [removable]="true"></app-tag-input>
+                <app-button type="icon" icon="plus"></app-button>
+                <app-button type="icon" icon="search-btn"></app-button>
+              </div>
+            </div>
+          </div>
           <div>
             <app-label forId="comment">Комментарий</app-label>
             <app-input placeholder="Введите комментарий" inputId="comment"></app-input>
