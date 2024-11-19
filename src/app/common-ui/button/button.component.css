@@ -14,6 +14,11 @@
   color: white;
   border-radius: 4px;
   padding: 6px 12px;
+  font-family: var(--font-family), serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
 }
 
 .secondary {
@@ -27,6 +32,7 @@
   line-height: 143%;
   text-align: center;
   color: #2e3238;
+  height: 32px;
 }
 
 .icon {

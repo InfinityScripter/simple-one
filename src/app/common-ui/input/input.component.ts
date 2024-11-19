@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import {SvgComponent} from '../svg/svg.component';
-import {NgIf} from '@angular/common';
+import { SvgComponent } from '../svg/svg.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-input',
@@ -15,4 +15,6 @@ import {NgIf} from '@angular/common';
 export class InputComponent {
   @Input() placeholder: string = '';
   @Input() icon: string | null = null;
+  @Input() inputId: string = '';
+  @Input() value: string = '';
 }

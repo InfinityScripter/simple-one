@@ -1,0 +1,12 @@
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e3238;
+}
+
+.required-star {
+  color: #b21f00;
+  margin-right: 4px;
+}

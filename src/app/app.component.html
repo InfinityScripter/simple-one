@@ -5,7 +5,66 @@
   <nav class="nav">
     <app-nav></app-nav>
   </nav>
-  <main class="main">body</main>
+  <main class="main">
+    <div class="main-wrapper">
+      <div class="subheading">
+        <div class="subheading__left">
+          <span class="subheading__title">Подзадача</span>
+          <app-button type="secondary" label="Создать"></app-button>
+        </div>
+        <div class="subheading__right">
+          <app-button type="primary" label="Сохранить"></app-button>
+          <app-button type="secondary" label="Создать"></app-button>
+        </div>
+      </div>
+      <div class="form-padding">
+        <h1 class="form-title">STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются
+          редактируемыми для агента если он Caller</h1>
+        <div class="form-wrapper">
+          <div class="two-columns">
+            <div>
+              <app-label forId="theme" [required]="true">Тема</app-label>
+              <app-input placeholder="Введите тему" inputId="theme"
+                         value="На инциденте, запросе, проблеме, в статусе закрыто некоторые поля остаются редактируемыми для агента если он Caller"></app-input>
+            </div>
+            <div>
+              <app-label forId="status">Статус</app-label>
+              <app-input placeholder="Введите статус" inputId="status" value="Новая"></app-input>
+            </div>
+          </div>
+          <div class="two-columns">
+            <div>
+              <app-label forId="description">Описание</app-label>
+              <app-input placeholder="Введите описание" inputId="description" value="123"></app-input>
+            </div>
+            <div>
+              <app-label forId="product">Продукт</app-label>
+              <div class="input-group">
+                <app-input placeholder="Введите продукт" inputId="product" value="Platform"></app-input>
+                <app-button type="icon" icon="search-btn"></app-button>
+              </div>
+            </div>
+          </div>
+          <div class="two-columns">
+            <div>
+              <app-label forId="notes" [required]="true">Рабочие заметки</app-label>
+              <app-input placeholder="Введите заметку" inputId="notes"
+                         value="Проверить ACL id=172830402014193655"></app-input>
+            </div>
+            <div>
+              <app-label forId="priority">Приоритет</app-label>
+              <app-input placeholder="Введите приоритет" inputId="priority" value="Низкий"></app-input>
+            </div>
+
+          </div>
+          <div>
+            <app-label forId="comment">Комментарий</app-label>
+            <app-input placeholder="Введите комментарий" inputId="comment"></app-input>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </div>
 
 <router-outlet/>

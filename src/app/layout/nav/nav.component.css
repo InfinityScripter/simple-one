@@ -19,7 +19,6 @@
 }
 
 .nav-search {
-  border-right: 1px solid #d5d8dd;
   width: 280px;
   display: flex;
   align-items: flex-start;
@@ -48,6 +47,7 @@
 
 .nav-search-wrapper {
   height: 100vh;
+  border-right: 1px solid #d5d8dd;
 }
 
 

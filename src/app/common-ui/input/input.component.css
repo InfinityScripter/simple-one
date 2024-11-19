@@ -22,6 +22,10 @@
   color: #abb1ba;
 }
 
+.custom-input:focus {
+  outline: none;
+}
+
 .input-icon {
   position: absolute;
   right: 10px;
@@ -29,3 +33,4 @@
   transform: translateY(-50%);
   pointer-events: none;
 }
+

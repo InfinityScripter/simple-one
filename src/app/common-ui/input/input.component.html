@@ -1,5 +1,5 @@
 <div class="input-container">
-  <input type="text" [placeholder]="placeholder" class="custom-input">
+  <input [id]="inputId" type="text" [placeholder]="placeholder" class="custom-input" [value]="value">
   <ng-container *ngIf="icon">
     <svg [icon]="icon" width="16" height="20" class="input-icon"></svg>
   </ng-container>
