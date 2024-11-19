@@ -4,11 +4,13 @@
   align-items: center;
   border: 1px solid #d5d8dd;
   border-radius: 4px;
-  padding: 4px;
+  padding: 0.15rem;
   width: 100%;
   position: relative;
   height: auto;
   min-height: 34px;
+  row-gap: 4px;
+  column-gap: 2px;
 }
 
 .tag {

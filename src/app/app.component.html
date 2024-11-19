@@ -63,7 +63,7 @@
               <app-label forId="handler">Ответственный</app-label>
               <div class="input-group-two-elements">
                 <app-tag-input inputId="handler" [tags]="['Константин Константинов']"
-                               [removable]="true"></app-tag-input>
+                             ></app-tag-input>
                 <app-button type="icon" icon="plus"></app-button>
                 <app-button type="icon" icon="search-btn"></app-button>
               </div>
@@ -71,7 +71,7 @@
             <div>
               <app-label forId="group">Группа</app-label>
               <div class="input-group-two-elements">
-                <app-tag-input inputId="group" [tags]="['Support Group']" [removable]="true"></app-tag-input>
+                <app-tag-input inputId="group" [tags]="['Support Group']"></app-tag-input>
                 <app-button type="icon" icon="plus"></app-button>
                 <app-button type="icon" icon="search-btn"></app-button>
               </div>
@@ -80,6 +80,66 @@
           <div>
             <app-label forId="comment">Комментарий</app-label>
             <app-input placeholder="Введите комментарий" inputId="comment"></app-input>
+          </div>
+          <div>
+            <app-label forId="coordinating">Согласующие</app-label>
+            <div class="input-group-two-elements">
+              <app-tag-input inputId="coordinating"
+                             [tags]="[
+                 'Андрей Пивоваров',
+                 'Максим Галактионов',
+                 'Алла Лин',
+                 'Константин Константинопольский Константинович',
+                 'Игорь Иванченко',
+                 'Юлия Эйчарова',
+                 'Артём Подпрыгайко-Саппортов',
+                 'Илья Вазнец',
+                 'Михаил Вортенов',
+                 'Наталья Нашевна',
+                 'Евгения Итамовна',
+                 'Алиса Киральчук'
+               ]"
+                             [removable]="true">
+              </app-tag-input>
+              <app-button type="icon" icon="plus"></app-button>
+              <app-button type="icon" icon="search-btn"></app-button>
+            </div>
+          </div>
+          <div class="two-columns">
+            <div>
+              <app-label forId="when-opened">Когда открыто</app-label>
+              <div class="input-group">
+                <app-input placeholder="Введите продукт" inputId="when-opened" value="22.01.2022"></app-input>
+                <app-button type="icon" icon="calendar"></app-button>
+              </div>
+            </div>
+
+            <div>
+              <app-label forId="when-created">Когда создано</app-label>
+              <div class="input-group">
+                <app-input placeholder="Введите продукт" inputId="when-created" value="22.01.2022"></app-input>
+                <app-button type="icon" icon="calendar"></app-button>
+              </div>
+            </div>
+          </div>
+          <div class="two-columns">
+            <div>
+              <app-label forId="who-opened">Кем открыто</app-label>
+              <div class="input-group-two-elements">
+                <app-tag-input inputId="who-opened" [tags]="['Константин Константинов']"
+                ></app-tag-input>
+                <app-button type="icon" icon="plus"></app-button>
+                <app-button type="icon" icon="search-btn"></app-button>
+              </div>
+            </div>
+            <div>
+              <app-label forId="who-created">Кем создано</app-label>
+              <div class="input-group-two-elements">
+                <app-tag-input inputId="who-created" [tags]="['Константин Константинов']"></app-tag-input>
+                <app-button type="icon" icon="plus"></app-button>
+                <app-button type="icon" icon="search-btn"></app-button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
