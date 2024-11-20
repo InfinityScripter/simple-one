@@ -30,6 +30,16 @@
   border-bottom: 1px solid #d5d8dd;
 }
 
+
+.nav-search.sticky {
+  position: sticky;
+  top: 48px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.04);
+  background: white;
+  z-index: 100;
+
+}
+
 .nav-item__icon {
   display: flex;
   align-items: center;

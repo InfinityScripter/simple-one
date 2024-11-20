@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {ButtonComponent} from '../../common-ui/button/button.component';
 import {InputComponent} from '../../common-ui/input/input.component';
 import {NgForOf} from '@angular/common';
+import {ScrollService} from '../../service/scroll.service';
 
 @Component({
   selector: 'app-nav',
@@ -32,4 +33,12 @@ export class NavComponent {
     'Управление уровнем услуг',
     'Настройка соответствий'
   ];
+
+  isSticky = false;
+
+  constructor(private scrollService: ScrollService) {
+    this.scrollService.isSticky$.subscribe((sticky) => {
+      this.isSticky = sticky;
+    });
+  }
 }

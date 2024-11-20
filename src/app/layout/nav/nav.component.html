@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="nav-search-wrapper">
-    <div class="nav-search">
+    <div class="nav-search" [class.sticky]="isSticky">
       <div class="nav-search__element">
         <app-input placeholder="Поиск по меню" icon="filter"></app-input>
         <app-button type="icon" icon="pin"></app-button>

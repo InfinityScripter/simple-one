@@ -7,6 +7,15 @@
   gap: 0;
 }
 
+.subheading.sticky {
+  position: sticky;
+  top: 48px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.04);
+  background: white;
+  z-index: 100;
+
+}
+
 .subheading__title {
   font-family: var(--second-family), serif;
   font-weight: 400;

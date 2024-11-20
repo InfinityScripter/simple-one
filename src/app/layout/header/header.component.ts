@@ -4,6 +4,7 @@ import {AvatarCircleComponent} from '../../common-ui/avatar-circle/avatar-circle
 import {ButtonComponent} from '../../common-ui/button/button.component';
 import {SvgComponent} from '../../common-ui/svg/svg.component';
 import {NgIf} from '@angular/common';
+import {ScrollService} from '../../service/scroll.service';
 
 @Component({
   selector: 'app-header',
@@ -20,7 +21,13 @@ import {NgIf} from '@angular/common';
 })
 export class HeaderComponent {
   isMobile: boolean = window.innerWidth <= 768;
+  isSticky = false;
 
+  constructor(private scrollService: ScrollService) {
+    this.scrollService.isSticky$.subscribe((sticky) => {
+      this.isSticky = sticky;
+    });
+  }
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.isMobile = window.innerWidth <= 768;

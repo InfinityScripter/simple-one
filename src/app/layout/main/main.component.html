@@ -1,5 +1,5 @@
 <div class="main-wrapper">
-  <div class="subheading">
+  <div class="subheading" [class.sticky]="isSticky">
     <div class="subheading__left">
       <span class="subheading__title">Подзадача</span>
       <app-button type="secondary" label="Создать" (click)="toggleModal()"></app-button>

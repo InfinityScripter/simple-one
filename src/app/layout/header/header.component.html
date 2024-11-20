@@ -1,4 +1,4 @@
-<div class="header-wrapper">
+<div class="header-wrapper" [class.sticky]="isSticky">
   <div class="header-left">
     <svg *ngIf="!isMobile" icon="logo" width="174" height="24"></svg>
     <app-button *ngIf="isMobile" type="icon" icon="nav"></app-button>
