@@ -1,5 +1,8 @@
 <div class="header-wrapper">
-  <svg icon="logo" width="174" height="24"></svg>
+  <div class="header-left">
+    <svg *ngIf="!isMobile" icon="logo" width="174" height="24"></svg>
+    <app-button *ngIf="isMobile" type="icon" icon="nav"></app-button>
+  </div>
   <div class="header-right">
     <app-input class="search-input" placeholder="Поиск" icon="search"></app-input>
     <app-avatar-circle [avatarUrl]="'assets/avatar.png'"></app-avatar-circle>

@@ -388,6 +388,15 @@ p {
   @media screen and (max-width: 992px) {
     grid-template-columns: 56px 1.6fr 1fr;
   }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1.6fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main";
+  }
+
 }
 
 .header {
