@@ -48,6 +48,9 @@
 .nav-search-wrapper {
   height: 100vh;
   border-right: 1px solid #d5d8dd;
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 }
 
 

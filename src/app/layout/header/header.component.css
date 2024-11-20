@@ -1,5 +1,8 @@
 .search-input {
   width: 296px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .header-wrapper{
@@ -14,4 +17,12 @@
   align-items: center;
   gap: 16px;
   justify-content: flex-end;
+}
+
+.header-right__user-name {
+  font-family: var(--font-family), serif;
+  white-space: nowrap;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }

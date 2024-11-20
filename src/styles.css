@@ -385,6 +385,9 @@ p {
     "header header header"
     "nav main main"
     "nav main main";
+  @media screen and (max-width: 992px) {
+    grid-template-columns: 56px 1.6fr 1fr;
+  }
 }
 
 .header {
@@ -399,4 +402,8 @@ p {
 
 .main {
   grid-area: main;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

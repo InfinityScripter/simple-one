@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Renderer2} from '@angular/core';
 import {ButtonComponent} from '../../common-ui/button/button.component';
 import {LabelComponent} from '../../common-ui/label/label.component';
 import {InputComponent} from '../../common-ui/input/input.component';
@@ -15,7 +15,8 @@ import {NgIf} from '@angular/common';
     InputComponent,
     TagInputComponent,
     ModalComponent,
-    NgIf
+    NgIf,
+    ModalComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
@@ -23,7 +24,11 @@ import {NgIf} from '@angular/common';
 export class MainComponent {
   openModal: boolean = false;
 
+  constructor(private renderer: Renderer2) {
+  }
+
   toggleModal() {
     this.openModal = !this.openModal;
+    this.openModal ? this.renderer.addClass(document.body, 'no-scroll') : this.renderer.removeClass(document.body, 'no-scroll');
   }
 }
